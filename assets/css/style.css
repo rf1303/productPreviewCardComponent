@@ -169,6 +169,7 @@ img, video, iframe, picture, figure {
     min-height: 45.6rem;
   }
   .layout__content {
+    justify-content: flex-start;
     height: 100%;
     min-width: 30rem;
     min-height: 45.6rem;
