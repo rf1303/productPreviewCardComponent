@@ -1,0 +1,151 @@
+@use './reset';
+@use './variables' as *;
+@use './font-face' as *;
+@use './mixin' as *;
+
+@include font-face("Fraunces", "../fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf", 700);
+
+@include font-face("Monstserrat", "../fonts/Montserrat/Montserrat-VariableFont_wght.ttf", 100 900);
+
+.layout {
+  background-color: $cream-color;
+  width: 100%;
+  height: 100%;
+  @include flexBox(column); 
+}
+
+.layout__main {
+  @include flexBox(column); 
+  max-width: 35rem;
+  max-height: 75rem;
+  background-color: $white-color;
+  border-radius: $space-100;
+  overflow: hidden;
+}
+
+
+
+.img__card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layout__content {
+  @include flexBox(column);
+  gap: $space-300;
+  align-items: flex-start;
+  padding: $space-400;
+}
+
+.header__subtitle {
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: $text-lh-3;
+  letter-spacing: .5rem;
+  color: $gray-color;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: $text-size-1;
+  font-family: Fraunces;
+  line-height: $text-lh-1; 
+  color: $black-color;
+}
+
+.header__lead {
+  font-size: 1.4rem;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: $text-lh-4;
+  color: $gray-color;
+}
+
+.content__price {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.price__one {
+  font-size: $text-size-1;
+  font-family: Fraunces;
+  line-height: $text-lh-1;
+  color: $green-500-color;
+}
+
+.price__two {
+  font-size: 1.3rem;
+  font-family: Montserrat;
+  line-height: $text-lh-3;
+  color: $gray-color;
+  vertical-align: middle;
+  align-items: center;
+  text-decoration: line-through;
+}
+
+.content__button {
+  width: 100%;
+  height: 100%;
+  background-color: $green-500-color;
+  @include flexBox;
+  gap: $space-100;
+  border-radius: $space-100;
+  padding: 1.6rem 3.2rem;
+}
+
+.button__icon {
+  font-size: 1.8rem;
+}
+
+.button__card {
+  color: $white-color;
+  font-size: 1.4rem;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+@media (min-width: $mediadesktop) {
+  .layout {
+     flex-direction: row; 
+  }
+  .layout__main {
+      width: 100%;
+      flex-direction: row; 
+      max-width: 60rem;
+      max-height: 45.6rem;
+  }
+  .layout__img {
+    min-width: 30rem;
+    min-height: 45.6rem;
+  }
+  .layout__content {
+    width: 100%;
+    height: 100%;
+    min-width: 30rem;
+    gap: 3.2rem;
+  }
+  .content__price {
+    padding: .8rem 0;
+  }
+  .img__card {
+    min-height: 45.6rem;
+  }
+}
+
+@media (max-height: 667px) {
+  .layout {
+  overflow: scroll;
+}
+  .layout__main {
+    overflow: scroll;  
+  }
+}
+
+
+
+
+
+
