@@ -138,6 +138,11 @@ img, video, iframe, picture, figure {
   padding: 1.3rem 3.2rem;
 }
 
+.content__button:hover {
+  background-color: #2a4032;
+  cursor: pointer;
+}
+
 .button__icon {
   font-size: 1.6rem;
 }
@@ -164,10 +169,12 @@ img, video, iframe, picture, figure {
     min-height: 45.6rem;
   }
   .layout__content {
-    width: 100%;
     height: 100%;
     min-width: 30rem;
-    max-height: 45.6rem;
+    min-height: 45.6rem;
+  }
+  .content__price {
+    padding: 0.8rem 0;
   }
   .img__card {
     min-height: 45.6rem;
