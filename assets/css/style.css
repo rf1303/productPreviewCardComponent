@@ -81,7 +81,7 @@ img, video, iframe, picture, figure {
   font-size: 1.2rem;
   font-family: Montserrat;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.5rem;
   color: #6c7289;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ img, video, iframe, picture, figure {
 .header__title {
   font-size: 3.2rem;
   font-family: Fraunces;
-  line-height: 100%;
+  line-height: 1;
   color: #1c232b;
 }
 
@@ -98,7 +98,7 @@ img, video, iframe, picture, figure {
   font-size: 1.4rem;
   font-family: Montserrat;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
   color: #6c7289;
 }
 
@@ -111,14 +111,14 @@ img, video, iframe, picture, figure {
 .price__one {
   font-size: 3.2rem;
   font-family: Fraunces;
-  line-height: 100%;
+  line-height: 1;
   color: #3d8168;
 }
 
 .price__two {
   font-size: 1.3rem;
   font-family: Montserrat;
-  line-height: 120%;
+  line-height: 1.2;
   color: #6c7289;
   vertical-align: middle;
   align-items: center;
