@@ -174,7 +174,7 @@ img, video, iframe, picture, figure {
     min-height: 45.6rem;
   }
   .content__price {
-    padding: 0.8rem 0;
+    margin: 0.8rem 0;
   }
   .img__card {
     min-height: 45.6rem;
