@@ -169,9 +169,6 @@ img, video, iframe, picture, figure {
     min-width: 30rem;
     max-height: 45.6rem;
   }
-  .content__price {
-    padding: 0.4rem 0;
-  }
   .img__card {
     min-height: 45.6rem;
   }
