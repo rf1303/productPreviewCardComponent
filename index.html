@@ -11,42 +11,40 @@
 
 </head>
 <body>
-    <section class="layout">  
-        <main class="layout__main"> 
-             <div class="layout__img">  
-                <picture class="img__sources"> 
-                    <source srcset="./assets/images/image-desktop02.avif" type="image/avif" media="(min-width: 48em)" width="300" height="456">
-                    <source srcset="./assets/images/image-desktop-webp.webp" type="image/webp" media="(min-width: 48em)" width="300" height="456">
-                    <source srcset="./assets/images/image-product-desktop.jpg" type="image/jpg" media="(min-width: 48em)" width="300" height="456">
-                    <source class="img__card" srcset="./assets/images/image-mobile02.avif" type="image/avif" media="(max-width: 48em)" width="350" height="342">
-                    <source srcset="./assets/images/image-mobile-webp.webp" type="image/webp" media="(max-width: 48em)" width="350" height="342">
-                    <img class="img__card" src="./assets/images/image-product-mobile.jpg" alt="mobile product"> 
-                </picture>      
+    <main class="layout__main"> 
+         <div class="layout__img">  
+            <picture class="img__sources"> 
+                <source srcset="./assets/images/image-desktop02.avif" type="image/avif" media="(min-width: 48em)" width="300" height="456">
+                <source srcset="./assets/images/image-desktop-webp.webp" type="image/webp" media="(min-width: 48em)" width="300" height="456">
+                <source srcset="./assets/images/image-product-desktop.jpg" type="image/jpg" media="(min-width: 48em)" width="300" height="456">
+                <source class="img__card" srcset="./assets/images/image-mobile02.avif" type="image/avif" media="(max-width: 47.99em)" width="350" height="342">
+                <source srcset="./assets/images/image-mobile-webp.webp" type="image/webp" media="(max-width: 47.99em)" width="350" height="342">
+                <img class="img__card" src="./assets/images/image-product-mobile.jpg" alt="mobile product"> 
+            </picture>      
+        </div>
+        <section class="layout__content">  
+                <h2 class="header__subtitle">perfume</h2>
+
+                <h1 class="header__title">Gabrielle Essence Eau De Parfum</h1>
+
+                <p class="header__lead"> 
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+
+            <div class="content__price"> 
+                <span class="price__one">$149.99</span>
+                <span class="price__two">$169.99</span>
             </div>
-            <section class="layout__content">  
-                    <h2 class="header__subtitle">perfume</h2>
-
-                    <h1 class="header__title">Gabrielle Essence Eau De Parfum</h1>
-
-                    <p class="header__lead"> 
-                        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-                        Perfumer-Creator for the House of CHANEL.
-                    </p>
-
-                <div class="content__price"> 
-                    <span class="price__one">$149.99</span>
-                    <span class="price__two">$169.99</span>
-                </div>
 
 
-                <div class="content__button"> 
-                    <img class="button__icon" src="./assets/images/icon-cart.svg" alt="button Icon">    
-                    <a class="button__card" href="#" > 
-                        Add to Cart
-                    </a>
-                </div>
-            </section>
-        </main>
-    </section> 
+            <div class="content__button"> 
+                <img class="button__icon" src="./assets/images/icon-cart.svg" alt="button Icon">    
+                <a class="button__card" href="#" > 
+                    Add to Cart
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
